@@ -8,10 +8,10 @@ public class Solution
 		// TODO Auto-generated method stub
 		int[][] matrix = new int[5][5];
 		int index = 1;
-		for(int i = 0; i<5;i++)
-			for(int j = 0 ;j<5; j++)
+		for (int i = 0; i < 5; i++)
+			for (int j = 0; j < 5; j++)
 				matrix[i][j] = index++;
-		
+
 		Solution solution = new Solution();
 		solution.rotate(matrix);
 	}
@@ -30,14 +30,15 @@ public class Solution
 				int step = edge - cur_row;
 				// up right
 				int last = matrix[cur_row][first_col];
-				int i = cur_row; int j = first_col;
-				while(step>0)
+				int i = cur_row;
+				int j = first_col;
+				while (step > 0)
 				{
-					if(j<edge)
+					if (j < edge)
 					{
 						j++;
 						step--;
-					}else
+					} else
 					{
 						i++;
 						step--;
@@ -47,14 +48,14 @@ public class Solution
 				matrix[i][j] = last;
 				last = now;
 				// down right
-				 step = edge - cur_row;
-				while(step>0)
+				step = edge - cur_row;
+				while (step > 0)
 				{
-					if(i<edge)
+					if (i < edge)
 					{
 						i++;
 						step--;
-					}else
+					} else
 					{
 						j--;
 						step--;
@@ -64,14 +65,15 @@ public class Solution
 				matrix[i][j] = last;
 				last = now;
 				// left down
-				 step = edge - cur_row;
-				while(step>0)
+				step = edge - cur_row;
+				while (step > 0)
 				{
-					if(j>cur_row)
+					if (j > cur_row)
 					{
 						j--;
 						step--;
-					}else {
+					} else
+					{
 						i--;
 						step--;
 					}
@@ -80,14 +82,15 @@ public class Solution
 				matrix[i][j] = last;
 				last = now;
 				// up left
-				 step = edge - cur_row;
-				while(step>0)
+				step = edge - cur_row;
+				while (step > 0)
 				{
-					if(i>cur_row)
+					if (i > cur_row)
 					{
 						i--;
 						step--;
-					}else {
+					} else
+					{
 						j++;
 						step--;
 					}
@@ -102,5 +105,5 @@ public class Solution
 			times--;
 		}
 	}
-	
+
 }

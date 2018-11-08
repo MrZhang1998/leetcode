@@ -11,8 +11,6 @@ public class Solution
 		boolean match = solution.isMatch(
 				"",
 				"");
-		//"bbaaaabaaaaabbabbabbabbababaabababaabbabaaabbaababababbabaabbabbbbbbaaaaaabaabbbbbabbbbabbabababaaaaa"
-		//"******aa*bbb*aa*a*bb*ab***bbba*a*babaab*b*aa*a****"
 		System.out.println(match);
 	}
 
