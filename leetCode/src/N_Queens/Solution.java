@@ -1,11 +1,8 @@
 package N_Queens;
-
 import java.util.ArrayList;
 import java.util.List;
-
 public class Solution
 {
-
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
@@ -13,7 +10,6 @@ public class Solution
 		List<List<String>> solveNQueens = solution.solveNQueens(10);
 		System.out.println(solveNQueens.size());
 	}
-
 	public List<List<String>> solveNQueens(int n)
 	{
 		boolean[][] flag = new boolean[n][n];
